@@ -5,17 +5,17 @@
 ## Dataset Information
 
 ### Dataset Source
-- **Dataset Link:** [Provide a direct link to your dataset. If the dataset is private, explain the reason and provide contact information for the dataset owner]
-- **Dataset Owner/Contact:** [If applicable, provide contact information for private datasets]
+- **Dataset Link:** [(https://ftp.cpc.ncep.noaa.gov/cwlinks/norm.daily.nao.cdas.z500.19500101_current.csv)]
+- **Dataset Owner/Contact:** [NOAA/National Oceanic and Atmospheric Administration]
 
 ### Dataset Characteristics
-- **Number of Observations:** [Total number of samples/records in your dataset. For time series data, also specify the temporal resolution (e.g., daily, hourly, etc.)]
+- **Number of Observations:** [~27700 days from 1950-01-01 to today, daily updated. Resolution is daily, though we also did rolling means to get a monthly, yearly and centurily resolved dataset.]
 - **Number of Features:** [Total number of features in your dataset]
 
 ### Target Variable/Label
 - **Label Name:** [Name of the target variable/column]
 - **Label Type:** [Classification/Regression/Clustering/Other]
-- **Label Description:** [What does this label represent? What is the prediction task?]
+- **Label Description:** [We want to predict the NAO index. The NAO is a pressure pattern in the North Atlantic, giving an idea about for example Europas winter weather tendency. The index is the difference of the sea level pressure in the icelandic low and the acores high.]
 - **Label Values:** [For classification: list of classes and their meanings. For regression: range of values. For other tasks: describe the label structure]
 - **Label Distribution:** [Brief description of class balance for classification or value distribution for regression]
 
