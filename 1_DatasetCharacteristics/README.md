@@ -9,7 +9,7 @@
 - **Dataset Owner/Contact:** [NOAA/National Oceanic and Atmospheric Administration]
 
 ### Dataset Characteristics
-- **Number of Observations:** [>27700 days from 1950-01-01 to today, daily updated. Resolution is daily. We also did rolling means with window sizes of 30 days (referred to as monthly), 356 days (-> year) and 10* 356 days (-> century). For this project we will take the monthly dataset, so we still have daily values, but smoothed considering the sourrounding 30 days.]
+- **Number of Observations:** [>27700 days from 1950-01-01 to today, daily updated. Resolution is daily. We also did rolling means with window sizes of 30 days (referred to as monthly), 356 days (-> year) and 10* 356 days (-> century). For this project we will take the monthly dataset, which still hase daily values, but smoothed considering the sourrounding 30 days.]
 - **Number of Features:** [3-4: nao_index, (month), season, decade]
 
 ### Target Variable/Label
