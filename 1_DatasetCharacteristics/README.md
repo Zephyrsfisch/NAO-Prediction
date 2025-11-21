@@ -9,23 +9,20 @@
 - **Dataset Owner/Contact:** [NOAA/National Oceanic and Atmospheric Administration]
 
 ### Dataset Characteristics
-- **Number of Observations:** [~27700 days from 1950-01-01 to today, daily updated. Resolution is daily, though we also did rolling means to get a monthly, yearly and centurily resolved dataset.]
-- **Number of Features:** [Total number of features in your dataset]
+- **Number of Observations:** [>27700 days from 1950-01-01 to today, daily updated. Resolution is daily. We also did rolling means with window sizes of 30 days (referred to as monthly), 356 days (-> year) and 10* 356 days (-> century). For this project we will take the monthly dataset, so we still have daily values, but smoothed considering the sourrounding 30 days.]
+- **Number of Features:** [3-4: nao_index, (month), season, decade]
 
 ### Target Variable/Label
-- **Label Name:** [Name of the target variable/column]
-- **Label Type:** [Classification/Regression/Clustering/Other]
+- **Label Name:** [nao_index_cdas, 4]
+- **Label Type:** [timeseries prediction]
 - **Label Description:** [We want to predict the NAO index. The NAO is a pressure pattern in the North Atlantic, giving an idea about for example Europas winter weather tendency. The index is the difference of the sea level pressure in the icelandic low and the acores high.]
-- **Label Values:** [For classification: list of classes and their meanings. For regression: range of values. For other tasks: describe the label structure]
-- **Label Distribution:** [Brief description of class balance for classification or value distribution for regression]
+- **Label Values:** [Minimum NAO: -1.55, Maximum NAO: 1.71]
+- **Label Distribution:** [The index is slighly skewed (-0.057), but nearly normal distributed with μ=0.03 and σ=0.5.]
 
 ### Feature Description
-[Provide a brief description of each feature or group of features in your dataset. If you have many features, group them logically and describe each group. Include information about data types, ranges, and what each feature represents.]
-
-**Example format:**
-- **Feature 1 (feature_name):** [Description of what this feature represents, data type, and any relevant details]
-- **Feature 2 (feature_name):** [Description of what this feature represents, data type, and any relevant details]
-- **Feature Group (group_name):** [Description of a group of related features]
+- **Feature 1 (decade):** [The decade of the time series. Eg. 1950-1959 is decade labeled 1959.]
+- **Feature 2 (season_flag):** [November-April = Winter = 1, Mai-October = Summer 0 -1. Sorted by mean seasonality/climatology in generally positiv or negativ values.]
+- **Feature 3 (month):** [Month of time series. Maybe not considered, since season does the same but maybe more representative?]
 
 ## Exploratory Data Analysis
 
