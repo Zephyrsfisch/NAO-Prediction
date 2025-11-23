@@ -10,7 +10,7 @@
 
 ### Dataset Characteristics
 - **Number of Observations:** [>27700 days from 1950-01-01 to today, daily updated. Resolution is daily. We also did rolling means with window sizes of 30 days (referred to as monthly), 356 days (-> year) and 10* 356 days (-> century). For this project we will take the monthly dataset, which still hase daily values, but smoothed considering the sourrounding 30 days.]
-- **Number of Features:** [3-4: nao_index, (month), season, decade]
+- **Number of Features:** [3-4: nao_index, (month), season, decade] Maybe we could also try additional features as: other climate Indexes as AMV or ENSO, oceanic features as AMOC strength or Sea Surface Temperature.
 
 ### Target Variable/Label
 - **Label Name:** [nao_index_cdas, 4]
