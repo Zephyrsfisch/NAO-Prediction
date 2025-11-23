@@ -35,13 +35,17 @@ Approaches or solutions that have been tried before on similar projects.
                 -Highlights challenges like variability and noise, guiding data preprocessing and model design.
 
 
-- **Source 2**: [Title of Source 2]
+- **Source 2**: NAO Seasonal Forecast Using a Multivariate Air–Sea Coupled Deep Learning Model Combined with Causal Discovery. Mu, B., Jiang, X., Yuan, S., Cui, Y. & Qin, B.Atmosphere 14, 792 (2023)
 
-  - **[Link]()**
-  - **Objective**:
-  - **Methods**:
-  - **Outcomes**:
-  - **Relation to the Project**:
+  - **[[Link]](https://doi.org/10.3390/atmos14050792)()**
+  - **Objective**: Proposes a data-driven, air–sea coupled deep learning model for NAO forecasting with causal discovery.
+  - **Methods**: First the best predictors (-> features) are chosen by applying data-driven causal discovery models. These multivariate spatial–temporal prediction are then put into the NAO-MCD. Here they are first „encoded“ ConvLSTM-based, then „coupled“ with a two-layer GCN and „decoded“ symmetrical to the encoder by transforming convolution layers corresponding to the convolution layers in ConvLSTM. By this Sea Level Pressure is predicted, which is then transferred to NAO index.
+  - **Outcomes**: Feature they tested, in brackets those which are not considered since not statistically significant for seasonal prediction: ENSO index, Sea ice extend, 500 hPa geopotential height, 10 m meridional wind, 10 m zonal wind, (Sea surface temperature), Sea surface latent heat flux.
+2- to 6-month lead-time NAO forecasts outperform conventional numerical models.
+Highly accurate seasonal forecasts of NAO
+  - **Relation to the Project**: The presented model predicts the NAO with deep learning techniques as we plan to do though using a more complex model architecture and also spatial.
+Maybe additionally a feature capturing the ocean part could improve our model?
+Winter NAO prediction is more robust, maybe we should also try that.
 
 - **Source 3**: [Title of Source 3]
 
