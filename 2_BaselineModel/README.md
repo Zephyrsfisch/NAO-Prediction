@@ -1,29 +1,22 @@
-# Baseline Model
+### Description
+[Short project description here. Briefly summarize the problem you are trying to solve and the approach you're taking.]
 
-**[Notebook](baseline_model.ipynb)**
+### Task Type
+[Image Classification / Chatbot / Regression / Clustering / Other]
 
-## Baseline Model Results
+### Results Summary
+#### Best Model Performance
+- **Best Model**: [Name and type of the best-performing model]
+- **Evaluation Metric**: [Primary metric used, e.g., Accuracy, F1-Score, MSE, MAE]
+- **Final Performance**: [Best score achieved, e.g., 95% accuracy, F1-score of 0.87, MSE of 0.12]
 
-### Model Selection
-- **Baseline Model Type:** Autoregressive
-- **Rationale:** The seasonality is an important and simple feature of the NAO index. An easy (but not so good) prediction would be, to just take that.
+#### Model Comparison
+- **Baseline Performance**: [Baseline model performance for comparison]
+- **Improvement Over Baseline**: [Quantitative improvement, e.g., "+12% accuracy", "25% reduction in MSE"]
+- **Best Alternative Model**: [Second-best model and its performance]
 
-### Model Performance
-- **Evaluation Metric:** MSE, RMSE, ACC
-- **Performance Score:** MSE climatology:  0.25
-MSE SARIMA:  0.39
-RMSE climatology:  0.50
-RMSE SARIMA:  0.62
-ACC climatology:  0.37
-ACC SARIMA:  0.16
-- **Cross-Validation Score:** [Mean and standard deviation of CV scores, e.g., 0.82 ± 0.03]
-
-### Evaluation Methodology
-- **Data Split:** 90/10
-- **Evaluation Metrics:** MSE, RMSE, ACC
-- 
-### Metric Practical Relevance
-[Explain the practical relevance and business impact of each chosen evaluation metric. How do these metrics translate to real-world performance and decision-making? What do the metric values mean in the context of your specific problem domain?]
-
-## Next Steps
-This baseline model serves as a reference point for evaluating more sophisticated models in the [Model Definition and Evaluation](../3_Model/README.md) phase.
+#### Key Insights
+- **Most Important Features**: [Top 3-5 features that drive model performance]
+- **Model Strengths**: [What the model does well]
+- **Model Limitations**: [Known limitations and failure cases]
+- **Business Impact**: [Practical implications of the model performance]
