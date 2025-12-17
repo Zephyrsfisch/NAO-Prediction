@@ -79,7 +79,7 @@ print(f"ACC RF:  {acc_rf:.4f} (Goal: > 0.3695)")
 # Compare with simple Persistence (Lag 1) to verify skill
 rmse_pers = sqrt(mean_squared_error(y_test, X_test['lag_1']))
 print(f"RMSE Persistence (Lag 1): {rmse_pers:.4f}")
-Why this improves your baseline:
-Beating Climatology: Your current notebook results show Climatology (RMSE 0.50) beating SARIMA (RMSE 0.62). Climatology simply predicts the historical average for that month. By adding lag_1 (last month's value) and lag_12 (last year's value) as features, the Random Forest can adjust that average based on the current state of the climate, reducing error.
+Why this improves our baseline:
+Beating Climatology: current notebook results show Climatology (RMSE 0.50) beating SARIMA (RMSE 0.62). Climatology simply predicts the historical average for that month. By adding lag_1 (last month's value) and lag_12 (last year's value) as features, the Random Forest can adjust that average based on the current state of the climate, reducing error.
 
 Handling Seasonality: Instead of forcing a rigid seasonal structure like SARIMA, the Random Forest learns how the seasonal signal (month_num) interacts with recent anomalies (lag_1).
