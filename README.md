@@ -7,11 +7,11 @@
 
 ## Description
 
-[Short project description here. Briefly summarize the problem you are trying to solve and the approach you're taking.]
+The North Atlantic Oscillation (NAO) is an important climate phenomenon in and around the North Atlantic, driving at least partly temperature and wind during winter for sourrounding countries. It can be described with the so called NAO index. We want to predict this index. Lets see, how far we can predict it correctly into the "future".
 
 ### Task Type
 
-[Image Classification / Chatbot / Regression / Clustering / Other]
+timeseries prediction
 
 ### Results Summary
 
