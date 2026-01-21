@@ -10,16 +10,16 @@
 
 ### Model Performance
 - **Evaluation Metric:** MSE, RMSE, ACC
-- **Performance Score:** MSE climatology:  0.25
-MSE SARIMA:  0.39
-RMSE climatology:  0.50
-RMSE SARIMA:  0.62
-ACC climatology:  0.37
-ACC SARIMA:  0.16
+- **Performance Score:** MSE climatology:  0.28
+MSE SARIMA:  0.26
+RMSE climatology:  0.53
+RMSE SARIMA:  0.51
+ACC climatology:  0.38
+ACC SARIMA:  0.43
 - **Cross-Validation Score:** [Mean and standard deviation of CV scores, e.g., 0.82 ± 0.03]
 
 ### Evaluation Methodology
-- **Data Split:** 90/10
+- **Data Split:** 80/20
 - **Evaluation Metrics:** MSE, RMSE, ACC
 - 
 ### Metric Practical Relevance
