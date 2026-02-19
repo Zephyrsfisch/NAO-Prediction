@@ -1,4 +1,3 @@
 # Presentation
 
-**[Slides](NAO prediction.pptx)**
-[README](../NAO prediction.pptx)
+**[Slides](../NAO prediction.pptx)**
