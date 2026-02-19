@@ -9,9 +9,9 @@
 - **Dataset Owner/Contact:** [NOAA/National Oceanic and Atmospheric Administration]
 
 ### Dataset Characteristics
-- **Number of Observations:** [>27700 days from 1950-01-01 to today, daily updated. Resolution is daily. We also did rolling means with window sizes of 30 days (referred to as monthly), 356 days (-> year) and 10* 356 days (-> century). For this project we will take the monthly dataset, which still hase daily values, but smoothed considering the sourrounding 30 days.]
-- **Number of Features:** [3-4: nao_index, (month), season, decade]
-- Maybe we could also try additional features as: other climate Indexes as AMV or ENSO, oceanic features as AMOC strength or Sea Surface Temperature.
+- **Number of Observations:** [>27700 days from 1950-01-01 to today, daily updated. Resolution is daily. For this project we will take monthly means.]
+- **Number of Features:** [month, (season), decade, many more for winter_only prediction, see model file itself for that]
+- additional ideas: other climate Indexes as AMV or ENSO, oceanic features as AMOC strength or Sea Surface Temperature.
 
 ### Target Variable/Label
 - **Label Name:** [nao_index_cdas, 4]
@@ -23,7 +23,7 @@
 ### Feature Description
 - **Feature 1 (decade):** [The decade of the time series. Eg. 1950-1959 is decade labeled 1959.]
 - **Feature 2 (season_flag):** [November-April = Winter = 1, Mai-October = Summer 0 -1. Sorted by mean seasonality/climatology in generally positiv or negativ values.]
-- **Feature 3 (month):** [Month of time series. Maybe not considered, since season does the same but maybe more representative?]
+- **Feature 3 (month, month_sin, month_cos):** [Month of time series, circular]
 
 ## Exploratory Data Analysis
 
