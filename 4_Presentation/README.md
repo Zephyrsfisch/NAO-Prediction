@@ -1,3 +1,3 @@
 # Presentation
 
-**[Slides](4_Presentation/NAO prediction.pptx)**
+**[Slides](NAO prediction.pptx)**
