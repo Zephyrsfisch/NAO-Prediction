@@ -1,44 +1,52 @@
-# NAO-Prediction
+NAO Prediction: Machine Learning for the North Atlantic Oscillation
 
 
-## Repository Link
+📌 Project Overview
+The North Atlantic Oscillation (NAO) is a major climatic phenomenon in the Northern Hemisphere, defined by the pressure difference between the Icelandic Low and the Azores High. It significantly impacts weather patterns across Europe and North America.
 
-[(https://github.com/Zephyrsfisch/NAO-Prediction)]
+This project focuses on predicting the NAO Index using various time-series forecasting techniques, ranging from classical statistical methods to modern Deep Learning architectures.
 
-## Description
+📂 Project Structure
+The repository is organized into the following modules to ensure a clear workflow from data analysis to final presentation:
 
-The North Atlantic Oscillation (NAO) is an important climate phenomenon in and around the North Atlantic, driving at least partly temperature and wind during winter for sourrounding countries. It can be described with the so called NAO index. We want to predict this index. Lets see, how far we can predict it correctly into the "future".
+1_Data_Characteristics/: Exploratory Data Analysis (EDA) and preprocessing.
 
-### Task Type
+2_Baseline_Model/: Implementation of the SARIMA statistical baseline.
 
-timeseries prediction
+3_Model/: Development and evaluation of Machine Learning and Deep Learning models.
 
-### Results Summary
+4_Presentation/: Final project slides and documentation.
 
-#### Best Model Performance
-- **Best Model:** [Name and type of the best-performing model"]
-- **Evaluation Metric:** [Primary metric used, e.g., Accuracy, F1-Score, MSE, MAE]
-- **Final Performance:** [Best score achieved, e.g., 95% accuracy, F1-score of 0.87, MSE of 0.12]
+📊 Model Summary
+We implemented a total of 1 Baseline + 3 Machine Learning models to evaluate different approaches to time-series forecasting:
 
-#### Model Comparison
-- **Baseline Performance:** [Baseline model performance for comparison]
-- **Improvement Over Baseline:** [Quantitative improvement, e.g., "+12% accuracy", "25% reduction in MSE"]
-- **Best Alternative Model:** [Second-best model and its performance]
+SARIMA (Baseline): A Seasonal Autoregressive Integrated Moving Average model used to capture the linear seasonal trends in the NAO index.
 
-#### Key Insights
-- **Most Important Features:** [Top 3-5 features that drive model performance]
-- **Model Strengths:** [What the model does well]
-- **Model Limitations:** [Known limitations and failure cases]
-- **Business Impact:** [Practical implications of the model performance]
+Random Forest Regressor: An ensemble learning method used to capture non-linear relationships in the atmospheric data.
 
-## Documentation
+LSTM (Long Short-Term Memory): A Recurrent Neural Network (RNN) designed to learn long-term dependencies in sequential climate data.
 
-1. **[Literature Review](0_LiteratureReview/README.md)**
-2. **[Dataset Characteristics](1_DatasetCharacteristics/exploratory_data_analysis.ipynb)**
-3. **[Baseline Model](2_BaselineModel/baseline_model.ipynb)**
-4. **[Model Definition and Evaluation](3_Model/model_definition_evaluation)**
-5. **[Presentation](4_Presentation/README.md)**
+XGBoost / ConvLSTM: (Note: Update this with your specific 3rd model—common choices for this project are XGBoost for gradient boosting or ConvLSTM for spatial-temporal data).
 
-## Cover Image
+🚀 Getting Started
+Prerequisites
+Ensure you have Python 3.10+ installed. You can install the required libraries using:
 
-![Project Cover Image](CoverImage/cover_image.png)
+Bash
+pip install -r requirements.txt
+Running the Project
+Explore the data characteristics in the 1_Data_Characteristics notebook.
+
+Run the baseline model in the 2_Baseline_Model folder.
+
+Compare advanced models in the 3_Model directory.
+
+📽 Presentation
+Our final findings and model comparisons are available in the Project Slides.
+
+👥 Contributors
+Paula
+
+Anil Kumar Gadamoni
+
+Murali Udutha
