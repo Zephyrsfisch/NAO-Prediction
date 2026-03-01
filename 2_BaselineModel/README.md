@@ -23,8 +23,11 @@ ACC SARIMA:  0.43
 - 
 ### Metric Practical Relevance
 MSE: Measures the average squared difference between predicted and actual values. By squaring the unit gets unhandy. Outliers are punished strongly. Good for regression problems for training. It is very broughtly used.
+
 RMSE: Same as MSE but the root of it. By this the unit is the same as the original values. Maybe better for reporting.
+
 ACC: Pearson correlation coefficient between predicted and correct values. By this, the computation of the pattern or the variability is in the focus and not the "raw" numbers. It is used for time series predictions as for example weather predictions and climate modeling.
+
 MSE and RMSE are used since they are very well known, punish outliers while ACC is maybe a more relevant metric. Looking at both/all three gives information about both, the pattern accuracy and the "number" accuracy.
 
 ## Next Steps
