@@ -20,7 +20,7 @@ Time-Series prediction
 - **Best Model:** Random Forest regression model
 - **Evaluation Metric:** ACC, (MSE, RMSE)
 - **Final Performance:** ACC  : 0.95, (MSE  : 0.08, RMSE : 0.28)
-- 
+
 #### Model Comparison
 - **Baseline Performance:** ACC = 0.43, (MSE = 0.26, RMSE = 0.51)
 
@@ -41,8 +41,7 @@ Ridge reduced: ACC=0.34, (MSE=0.20, RMSE =0.45)
 
   
 #### Model Comparison
-Maybe not the best comparison, since our baseline model predicts somthing else (not winter only).
-The baseline winter only value is constant over time. In the following we never the less compare to the metrics as defined in the baseline model.
+No fair comparison, since the baseline model predicts monthly whereas the analyzed model predicts a winter mean. The baseline winter only value is constant over time. In the following we never the less compare to the metrics as defined in the baseline model.
 - **Baseline Performance:** ACC = 0.43, (MSE = 0.26, RMSE = 0.51)
 
 - **Improvement Over Baseline:**
