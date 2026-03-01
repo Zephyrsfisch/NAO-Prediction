@@ -5,10 +5,7 @@
 [https://github.com/Zephyrsfisch/NAO-Prediction]
 
 ## Description
-
-The North Atlantic Oscillation (NAO) is a major climatic phenomenon in the Northern Hemisphere, defined by 
-the pressure difference between the Icelandic Low and the Azores High. It significantly impacts weather 
-patterns across Europe and North America.
+The North Atlantic Oscillation (NAO) is an important climate phenomenon in and around the North Atlantic, driving at least partly temperature and wind during winter for sourrounding countries - North America and Europe. It can be described with the so called NAO index. We want to predict this index. Lets see, how far we can predict it correctly into the "future".
 
 ### Task Type
 
