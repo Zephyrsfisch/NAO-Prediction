@@ -28,7 +28,7 @@ RMSE: Same as MSE but the root of it. By this the unit is the same as the origin
 
 ACC: Pearson correlation coefficient between predicted and correct values. By this, the computation of the pattern or the variability is in the focus and not the "raw" numbers. It is used for time series predictions as for example weather predictions and climate modeling.
 
-MSE and RMSE are used since they are very well known, punish outliers while ACC is maybe a more relevant metric. Looking at both/all three gives information about both, the pattern accuracy and the "number" accuracy.
+MSE and RMSE are used since they are very well known, punish outliers while ACC is maybe a more relevant metric for this specific project. Looking at both/all three gives information about both, the pattern accuracy and the "number" accuracy.
 
 ## Next Steps
 This baseline model serves as a reference point for evaluating more sophisticated models in the [Model Definition and Evaluation](../3_Model/README.md) phase.
